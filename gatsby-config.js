@@ -11,21 +11,6 @@ module.exports = {
   },
 
   plugins: [
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Lora`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`],
-          },
-        ],
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-source-drupal',
