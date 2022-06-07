@@ -67,7 +67,7 @@ const SteelSpecialtyMetals = () => {
       </About>
 
       <FlexContainer>
-        {data.allNodeSteelAndSpecialityMetals.edges.map(edge => {
+        {data.allNodeSteelAndSpecialityMetals.edges.map((edge) => {
           const links = <Link to={`/${edge.node.fields.slug}`}></Link>
           const images =
             edge.node.relationships.field_steel_and_special_metal[0]?.localFile

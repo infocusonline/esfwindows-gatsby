@@ -96,6 +96,48 @@ const NewPageWoodTesting = () => {
                 </li>
               )
             }
+
+            if (links.props.to === '/fiberglass') {
+              return (
+                <li>
+                  <Link to="/materials-fiberglass">
+                    <SetImg fixed={images} />
+                    <h2>{edge.node.title}</h2>
+                  </Link>
+                </li>
+              )
+            }
+
+            if (links.props.to === '/alu-clad-wood') {
+              return (
+                <li>
+                  <Link to="/products/alu-clad-windows">
+                    <SetImg fixed={images} />
+                    <h2>{edge.node.title}</h2>
+                  </Link>
+                </li>
+              )
+            }
+            if (links.props.to === '/steel') {
+              return (
+                <li>
+                  <Link to="/steel-and-specialty-metals/windows">
+                    <SetImg fixed={images} />
+                    <h2>{edge.node.title}</h2>
+                  </Link>
+                </li>
+              )
+            }
+            if (links.props.to === '/wood') {
+              return (
+                <li>
+                  <Link to="/404">
+                    <SetImg fixed={images} />
+                    <h2>{edge.node.title}</h2>
+                  </Link>
+                </li>
+              )
+            }
             return (
               <li>
                 {images ? (
